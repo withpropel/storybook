@@ -1,0 +1,24 @@
+import{B as f}from"./base-button-DRq3dh2S.js";import{n as h}from"./app-BQSE6mr4.js";import"./iconify-rQT97Fj4.js";import"./vue.esm-BaK_9ySz.js";const m={components:{baseButton:f},props:{variant:{type:String,default:"default",validator:function(a){return["default","success","warning","error"].indexOf(a)!==-1}},text:{type:String,default:"Please update your profile to have a better chance with your application."},linkText:{type:String,default:"Update profile"},linkHref:{type:String,default:"https://withpropel.test"},id:{type:[String,Number],required:!0,default:null},show:{type:Boolean,required:!0,default:!1},classes:{type:String,default:""},showMobile:{type:Boolean,default:!1}},data(){return{}},computed:{isMobile(){return this.$windowWidth<=641}},methods:{handleClose(){this.$emit("close",this.id)}}};var b=function(){var e=this,t=e._self._c;return t("div",{staticClass:"base-banner",class:[e.show?"base-banner--show":"",`base-banner--${e.variant}`,e.classes],style:e.showMobile?{width:"414px"}:"",attrs:{id:e.id}},[t("span",{staticClass:"base-banner__info"},[t("Icon",{attrs:{icon:"fluent:info-24-filled",width:"16px",height:"16px"}}),t("span",{staticClass:"base-banner__info-inner"},[t("span",{staticClass:"base-banner__text"},[e._v(" "+e._s(e.text)+" ")]),e.linkText&&e.linkHref&&!(e.isMobile&&e.showMobile)?t("a",{staticClass:"base-banner__cta",attrs:{target:"_blank",href:e.linkHref}},[e._v(" "+e._s(e.linkText)+" ")]):e._e(),e.linkText&&e.linkHref&&(e.isMobile||e.showMobile)?t("base-button",{attrs:{variant:"flat",size:"md","button-class":"bg-white mt-4"}},[e._v(" "+e._s(e.linkText)+" ")]):e._e()],1)],1),t("span",{staticClass:"base-banner__close",on:{click:e.handleClose}},[t("Icon",{attrs:{icon:"fluent:dismiss-24-regular",width:"16px",height:"16px"}})],1)])},x=[],d=h(m,b,x,!1,null,null);const r=d.exports;d.exports.__docgenInfo={exportName:"default",displayName:"base-banner",description:"",tags:{},props:[{name:"variant",type:{name:"string"},defaultValue:{func:!1,value:'"default"'},values:["default","success","warning","error"]},{name:"text",type:{name:"string"},defaultValue:{func:!1,value:'"Please update your profile to have a better chance with your application."'}},{name:"linkText",type:{name:"string"},defaultValue:{func:!1,value:'"Update profile"'}},{name:"linkHref",type:{name:"string"},defaultValue:{func:!1,value:'"https://withpropel.test"'}},{name:"id",type:{name:"string|number"},required:!0,defaultValue:{func:!1,value:"null"}},{name:"show",type:{name:"boolean"},required:!0,defaultValue:{func:!1,value:"false"}},{name:"classes",type:{name:"string"},defaultValue:{func:!1,value:'""'}},{name:"showMobile",type:{name:"boolean"},defaultValue:{func:!1,value:"false"}}],events:[{name:"close",type:{names:["undefined"]}}],sourceFiles:["/Users/agoiabel/code/withpropel/resources/js/components/reusables/banners/base-banner.vue"]};const v={title:"UI/Banner",component:r,tags:["autodocs"],render:(a,{argTypes:e})=>({props:Object.keys(e),components:{BaseBanner:r},template:'<base-banner v-bind="$props" @close="handleClose" />',methods:{handleClose(){alert(`Banner with id ${a.id} closed`),console.log(`Banner with id ${a.id} closed`)}}}),argTypes:{variant:{control:{type:"select"},options:["default","success","warning","error"]},text:{control:{type:"text"},description:"The content displayed in the info section"},linkText:{control:{type:"text"},description:"The text displayed for the link"},linkHref:{control:{type:"text"},description:"The URL for the link"},id:{control:"text"},show:{control:"boolean"}}},n={args:{variant:"default",text:"This is custom text for the default story.",linkText:"Click Here",linkHref:"https://www.example.com",id:"test-banner",show:!0}},s={args:{variant:"default",text:"This is custom text for the default story.",linkText:"Click Here",linkHref:"https://www.example.com",id:"test-banner",show:!0,showMobile:!0}};var l,o,i;n.parameters={...n.parameters,docs:{...(l=n.parameters)==null?void 0:l.docs,source:{originalSource:`{
+  args: {
+    variant: "default",
+    text: "This is custom text for the default story.",
+    linkText: "Click Here",
+    // Optional Example link text
+    linkHref: "https://www.example.com",
+    // Optional Example link href
+    id: "test-banner",
+    show: true
+  }
+}`,...(i=(o=n.parameters)==null?void 0:o.docs)==null?void 0:i.source}}};var u,c,p;s.parameters={...s.parameters,docs:{...(u=s.parameters)==null?void 0:u.docs,source:{originalSource:`{
+  args: {
+    variant: "default",
+    text: "This is custom text for the default story.",
+    linkText: "Click Here",
+    // Optional Example link text
+    linkHref: "https://www.example.com",
+    // Optional Example link href
+    id: "test-banner",
+    show: true,
+    showMobile: true
+  }
+}`,...(p=(c=s.parameters)==null?void 0:c.docs)==null?void 0:p.source}}};const g=["Default","Mobile"];export{n as Default,s as Mobile,g as __namedExportsOrder,v as default};

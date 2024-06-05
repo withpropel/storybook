@@ -1,0 +1,114 @@
+/* Base styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+.notifier-card {
+    width: auto;
+    max-width: 80%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+.card-image img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .notifier-card {
+        width: 100%;
+    }
+}
+.topbar {
+    width: 100%;
+}
+.topbar_left {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+}
+.topbar_right {
+    text-align: right;
+    margin-left: 0;
+    margin-right: 10px;
+    float: right;
+}
+.page {
+    margin: 0 auto;
+    height: auto;
+    width: 8.5in;
+    background: #fff;
+    box-shadow:
+        0 0 0 0.75pt #d1d1d1,
+        0 0 3pt 0.75pt #ccc;
+    margin-bottom: 0.5in;
+}
+@media screen and (max-width: 830px) {
+    .page {
+        width: 100%;
+        height: auto;
+    }
+}
+.margins {
+    /*background:#EEE;*/
+    margin: 0;
+    margin-left: 0.5in;
+    margin-right: 0.5in;
+    margin-top: 0.5in;
+    padding-top: 0.5in;
+    padding-bottom: 0.5in;
+}
+.basic-info-top {
+    margin-bottom: 10px;
+}
+.basic-info address {
+    display: flex;
+    flex-direction: column;
+}
+.basic-info address span {
+    display: flex;
+}
+h1,
+.location {
+    text-transform: capitalize;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 0.95rem;
+}
+address,
+p {
+    font-size: 1.1rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+hr {
+    border: none;
+    border-bottom: 1px solid #000;
+    margin: 10px 0;
+}
+.info {
+    float: right;
+}
+.center {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}

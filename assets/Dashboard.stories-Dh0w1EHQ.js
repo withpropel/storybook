@@ -1,0 +1,9 @@
+import{N as b}from"./navbar-a4xeuc0k.js";import{T as u}from"./topbar-Bp1iwI_m.js";import{n as f}from"./app-BQSE6mr4.js";import"./base-button-DRq3dh2S.js";import"./iconify-rQT97Fj4.js";import"./vue.esm-BaK_9ySz.js";import"./base-dropdown-C93yDGkf.js";import"./avatar-pZqWnf-t.js";import"./_commonjsHelpers-Cpj98o6Y.js";const h={components:{navbar:b,topbar:u},props:{showMobile:{type:Boolean,default:!1}}};var _=function(){var e=this,s=e._self._c;return s("section",{staticClass:"new-dashboard"},[s("navbar",{attrs:{"show-mobile":e.showMobile}}),s("div",{staticClass:"new-dashboard-inner",class:{"w-100":e.showMobile}},[s("topbar",{attrs:{"show-mobile":e.showMobile}}),s("main",{staticClass:"new-dashboard-main"},[e._t("default")],2)],1)],1)},w=[],m=f(h,_,w,!1,null,null);const r=m.exports;m.exports.__docgenInfo={exportName:"default",displayName:"new",description:"",tags:{},props:[{name:"showMobile",type:{name:"boolean"},defaultValue:{func:!1,value:"false"}}],slots:[{name:"default"}],sourceFiles:["/Users/agoiabel/code/withpropel/resources/js/layouts/dashboard/new.vue"]};const j={title:"Layouts/Dashboard",component:r,tags:["autodocs"],render:(d,{argTypes:e})=>({props:Object.keys(e),components:{Dashboard:r},template:'<Dashboard v-bind="$props" />'}),argTypes:{}},o={args:{showMobile:!1}},a={args:{showMobile:!0}};var t,n,l;o.parameters={...o.parameters,docs:{...(t=o.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {
+    showMobile: false
+  }
+}`,...(l=(n=o.parameters)==null?void 0:n.docs)==null?void 0:l.source}}};var i,p,c;a.parameters={...a.parameters,docs:{...(i=a.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: {
+    showMobile: true
+  }
+}`,...(c=(p=a.parameters)==null?void 0:p.docs)==null?void 0:c.source}}};const F=["Default","Mobile"];export{o as Default,a as Mobile,F as __namedExportsOrder,j as default};

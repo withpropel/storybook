@@ -1,0 +1,42 @@
+.portal-button {
+    position: fixed;
+    z-index: 1100;
+    right: 20px;
+    bottom: 80px;
+}
+
+.portal-button a {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.14px;
+    text-decoration: none;
+    background-color: #384747;
+    color: #e4e7e7;
+    border-radius: 32px;
+    transition: color 0.3s ease;
+    transition-property: color, background-color;
+}
+
+.portal-button a:hover {
+    background-color: #003870;
+    color: #fff;
+}
+
+.portal-button a span {
+    width: 0;
+    display: none;
+    transition: all 0.4s ease;
+    transition-delay: 100ms;
+    transition-property: width;
+}
+
+.portal-button a:hover span {
+    width: auto;
+    display: inline-block;
+    margin-left: 6px;
+}
